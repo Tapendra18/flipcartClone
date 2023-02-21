@@ -15,7 +15,7 @@ const Container = styled(Box)`
      display : flex;
 `
 
-const LoginBotton =  styled(Button)`
+const LoginBotton = styled(Button)`
     color : #2874f0;
     background:#fff;
     text-transform:none;
@@ -31,13 +31,13 @@ const CustomBotton = () => {
     return (
         <Wrapper>
             <LoginBotton variant='contained'>Login</LoginBotton>
-            <Typography style={{marginTop:3 , width: 135 }} >Become a Seller</Typography>
-            <Typography style={{marginTop: 3 }} >More</Typography>
+            <Typography style={{ marginTop: 3, width: 135 }} >Become a Seller</Typography>
+            <Typography style={{ marginTop: 3 }} >More</Typography>
 
             <Container>
-            <ShoppingCartIcon />
+                <ShoppingCartIcon />
                 <Typography>
-                   Cart
+                    Cart
                 </Typography>
             </Container>
         </Wrapper>
