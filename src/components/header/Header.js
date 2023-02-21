@@ -1,6 +1,7 @@
 import React from 'react'
 import { AppBar, Toolbar, Box, styled, Typography } from '@mui/material';
 import Search from './Search';
+import CustomBotton from './CustomBotton';
 
 const StyleHeader = styled(AppBar)`
     background: #2874f0;
@@ -24,6 +25,10 @@ const PlusImage = styled('img')`
 
 `
 
+const CustomBottonWrapper = styled(Box)`
+    margin: 0 5% 0 auto
+`
+
 const Header = () => {
     const logoURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png';
     const subURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png';
@@ -32,7 +37,7 @@ const Header = () => {
     return (
         <div>
             <StyleHeader >
-                <Toolbar>
+                <Toolbar style={{ minHeight: "55px" }}>
                     <Component>
                         <img src={logoURL} alt="logo" style={{
                             width: 75
@@ -45,6 +50,9 @@ const Header = () => {
                         </Box>
                     </Component>
                     <Search />
+                    <CustomBottonWrapper>
+                        <CustomBotton />
+                    </CustomBottonWrapper>
                 </Toolbar>
             </StyleHeader>
         </div>
